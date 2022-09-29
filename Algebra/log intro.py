@@ -423,7 +423,7 @@ class Thumbnail(Scene):
     def construct(self):
         ax = Axes(tips=False, y_axis_config={"include_numbers": False, "font_size": 30}, 
         x_axis_config={"include_numbers": False, "font_size": 30}, x_range=[-5, 50, 10], y_range=[-5, 50, 10])
-        ax.shift(LEFT * 0.2)
+        ax.shift(LEFT * 0.35)
         logGraph=ax.plot(lambda x: math.log2(x), x_range=[0.0001, 50, 0.01], color = GREEN)
         expGraph=ax.plot(lambda x: 3 ** x, x_range= [-50, 3.56087679], color = LIGHT_PINK)
         matTex = MathTex(r"\log_A \left(A", r"^{x}", r"\right) = ", "x", font_size=150).shift(RIGHT*0.6)
@@ -436,7 +436,7 @@ class ThumbnailTake2(Scene):
     def construct(self):
         ax = Axes(tips=False, y_axis_config={"include_numbers": False, "font_size": 30}, 
         x_axis_config={"include_numbers": False, "font_size": 30}, x_range=[-5, 50, 10], y_range=[-5, 50, 10])
-        ax.shift(LEFT * 0.2)
+        ax.shift(LEFT * 0.35)
         logGraph=ax.plot(lambda x: math.log2(x), x_range=[0.0001, 50, 0.01], color = GREEN)
         expGraph=ax.plot(lambda x: 3 ** x, x_range= [-50, 3.56087679], color = LIGHT_PINK)
         matTex = MathTex(r"\log \left(100", r"^{2}", r"\right) = ", "2", font_size=150).shift(RIGHT*0.6)
